@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Hiromy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Pantalla de inicio para permitir el audio -->
+    <div class="start-popup" id="start-popup">
+        <div class="popup-content">
+            <h2>¡Tengo una sorpresa para ti!</h2>
+            <button id="start-btn" class="btn-premium">Presióname</button>
+        </div>
+    </div>
+
+    <!-- Audio de fondo (Asegúrate de colocar tu canción en la misma carpeta como music.mp3) -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- Partículas flotantes de fondo -->
+        <div class="particles">
+            <div class="particle" style="--d: 1s; --x: 20%; --y: 30%"></div>
+            <div class="particle" style="--d: 3s; --x: 70%; --y: 50%"></div>
+            <div class="particle" style="--d: 2s; --x: 40%; --y: 20%"></div>
+            <div class="particle" style="--d: 4s; --x: 80%; --y: 70%"></div>
+            <div class="particle" style="--d: 5s; --x: 10%; --y: 60%"></div>
+            <div class="particle" style="--d: 3.5s; --x: 90%; --y: 10%"></div>
+            <div class="particle" style="--d: 6s; --x: 5%; --y: 80%"></div>
+        </div>
+
+        <div class="bouquet">
+            <!-- CAPA 1 (Más lejana / Menor Z-index) -->
+            <div class="tulip-wrap" style="--rot: -45deg; --x: -160px; --y: 50px; --scale: 0.65; z-index: 1;">
+                <div class="tulip-container t-magenta" style="--sway-delay: 0.8s;" data-message="Eres mi lugar seguro cuando el mundo es un caos.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: -25deg; --x: -100px; --y: 35px; --scale: 0.7; z-index: 1;">
+                <div class="tulip-container t-blue" style="--sway-delay: 0.3s;" data-message="Atesoro cada risa nueva que me das.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: 25deg; --x: 100px; --y: 35px; --scale: 0.7; z-index: 1;">
+                <div class="tulip-container t-coral" style="--sway-delay: 0.5s;" data-message="Nos esperan años de fantásticas y locas aventuras.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: 45deg; --x: 160px; --y: 50px; --scale: 0.65; z-index: 1;">
+                <div class="tulip-container t-cyan" style="--sway-delay: 0.9s;" data-message="Gracias por siempre apoyarme y creer en mi versión.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+
+            <!-- CAPA 2 (Intermedia Puesta Atrás) -->
+            <div class="tulip-wrap" style="--rot: -35deg; --x: -130px; --y: 20px; --scale: 0.75; z-index: 2;">
+                <div class="tulip-container t-orange" style="--sway-delay: 0.1s;" data-message="Tu sonrisa ilumina todas las habitaciones que pisas.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: -15deg; --x: -60px; --y: 10px; --scale: 0.8; z-index: 2;">
+                <div class="tulip-container t-purple" style="--sway-delay: 0.6s;" data-message="Eres la persona más amable y dulce de mi vida.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: 35deg; --x: 130px; --y: 20px; --scale: 0.75; z-index: 2;">
+                <div class="tulip-container t-yellow" style="--sway-delay: 0.4s;" data-message="Siempre serás el rayo de luz brillante de nuestro grupo.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+
+            <!-- CAPA 3 (Media Cercana) -->
+            <div class="tulip-wrap" style="--rot: -20deg; --x: -85px; --y: 5px; --scale: 0.85; z-index: 3;">
+                <div class="tulip-container t-pink" style="--sway-delay: 0.2s;" data-message="Cada momento a tu lado está lleno de risas y recuerdos hermosos.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: 20deg; --x: 85px; --y: 5px; --scale: 0.85; z-index: 3;">
+                <div class="tulip-container t-white" style="--sway-delay: 0.7s;" data-message="Que tengas un día muy precioso. Te amo.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+
+            <!-- CAPA 4 (Los Acompañantes del Centro) -->
+            <div class="tulip-wrap" style="--rot: -10deg; --x: -40px; --y: -5px; --scale: 0.95; z-index: 4;">
+                <div class="tulip-container t-yellow" style="--sway-delay: 0.5s;" data-message="Tu alegría ilumina mis días más oscuros. Te amo muchísimo.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+            <div class="tulip-wrap" style="--rot: 10deg; --x: 40px; --y: -5px; --scale: 0.95; z-index: 4;">
+                <div class="tulip-container t-purple" style="--sway-delay: 0.8s;" data-message="Gracias por ser siempre mi confidente y mi apoyo incondicional.">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+
+            <!-- CAPA 5 (CENTRO PRINCIPAL) -->
+            <div class="tulip-wrap" style="--rot: 0deg; --x: 0px; --y: -15px; --scale: 1.05; z-index: 10;">
+                <div class="tulip-container t-red" style="--sway-delay: 0s;" data-message="Eres mi mejor amiga en todo el universo, ¡nunca cambies!">
+                    <div class="tulip"><div class="glow"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div><div class="stem"></div><div class="flower"><div class="petal petal-back"></div><div class="petal petal-left"></div><div class="petal petal-right"></div><div class="petal petal-front"></div></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="greeting-container">
+            <h1 class="greeting">Para Hiromy</h1>
+            <p class="subtitle">Un ramo gigante para la mejor amiga del mundo en su cumpleaños</p>
+        </div>
+
+        <!-- Ventana de mensajes de los tulipanes -->
+        <div class="message-popup" id="message-popup">
+            <button class="close-btn" id="close-msg">&times;</button>
+            <h3 style="color: #ff4e88; margin-top: 5px;">Para ti...</h3>
+            <p id="message-text">Mensaje aquí</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
